@@ -1,5 +1,7 @@
 window.onload = function () {
 
+    // ToDo: Generates the stockName by user search
+    var stockName = "Netflix"
     var dataPoints = []
     // ToDO: This should be hadled by server in order to not exposing the api key
     // Leaving this for time being 
@@ -8,7 +10,7 @@ window.onload = function () {
     var chart = new CanvasJS.Chart("chartContainer", {
         animationEnabled: true,
         title:{
-            text: "Stock Price of BMW - August"
+            text: "Stock Price of " + stockName
         },
         axisX:{
             valueFormatString: "DD MMM",
