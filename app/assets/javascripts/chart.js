@@ -1,7 +1,7 @@
-window.onload = function () {
+function drawChart() {
 
     // ToDo: Generates the stockName by user search
-    var stockName = "Netflix"
+    var stockName = $('#symbolSearch').val()
     var dataPoints = []
     // ToDO: This should be hadled by server in order to not exposing the api key
     // Leaving this for time being 
@@ -57,7 +57,6 @@ window.onload = function () {
     
     }
     // ToDo: Generate the api call dynamically based on user input
-    $.getJSON("https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=NFLX&apikey=" + apikey, addData);
+    $.getJSON("https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=" + stockName +"&apikey=" + apikey, addData);
 
-
-}    
+}
