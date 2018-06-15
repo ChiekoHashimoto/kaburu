@@ -63,3 +63,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 #Http client
 gem 'httparty'
+
+#bootstrap
+gem 'bootstrap'
+gem 'jquery-rails'
